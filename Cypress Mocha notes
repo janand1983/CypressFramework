@@ -1,0 +1,16 @@
+check value use have
+homePage.getTwoWayDataBinding().should('have.value',this.data.name)
+check size
+cy.get('.product').should('have.length',5)
+Check only visible element
+cy.get('.product:visible').should('have.length',4)
+check attribute
+homePage.getEditBox().should('have.attr','minlength','2')
+check diabled or some default attributes use be
+homePage.getEntrepreneaur().should('be.disabled')
+
+expect(actualText.includes("Success")).to.be.true
+
+cy.url().should('include','top')
+
+ expect(priceText).to.equal('26')x
